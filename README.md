@@ -5,7 +5,7 @@ This project implements a modern ELT data warehouse using BigQuery and dbt.
 ## Architecture
 
 
-
+```mermaid
 graph LR
     subgraph Ingestion
     Gen[Python Generator] -->|Writes CSVs| Raw[Raw Data (CSVs)]
