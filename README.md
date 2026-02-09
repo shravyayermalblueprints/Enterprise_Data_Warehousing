@@ -5,6 +5,7 @@ This project implements a modern ELT data warehouse using BigQuery and dbt.
 ## Architecture
 
 ```mermaid
+
 graph LR
     subgraph Ingestion
     Gen[Python Generator] -->|Writes CSVs| Raw[Raw Data (CSVs)]
@@ -20,8 +21,8 @@ graph LR
     classDef storage fill:#fff3e0,stroke:#e65100,stroke-width:2px;
     classDef process fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
 
-    class Gen,Raw source;
-    class Stg,WH,Marts storage;
+    class Gen, Raw source;
+    class Stg, WH, Marts storage;
 ```
 
 ![Architecture Diagram](docs/images/architecture.png)
