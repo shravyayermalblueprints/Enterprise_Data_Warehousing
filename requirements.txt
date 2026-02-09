@@ -1,0 +1,4 @@
+Faker==22.5.1
+pandas==2.2.0
+google-cloud-bigquery==3.17.1
+dbt-bigquery==1.7.0

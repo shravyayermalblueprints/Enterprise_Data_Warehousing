@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: internal_db
+    database: "{{ var('project_id') }}"
+    schema: raw_internal
+    tables:
+      - name: users
+      - name: orders
+      - name: products
+      
+  - name: event_logs
+    database: "{{ var('project_id') }}"
+    schema: raw_events
+    tables:
+      - name: page_views
