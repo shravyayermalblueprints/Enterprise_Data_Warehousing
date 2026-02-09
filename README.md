@@ -8,7 +8,7 @@ This project implements a modern ELT data warehouse using BigQuery and dbt.
 ```mermaid
 graph LR
     subgraph Ingestion
-    Gen[Python Generator] -->|Writes CSVs| Raw[Raw Data (CSVs)]
+    Gen[Python Generator] -->|Writes CSVs| Raw[Raw Data(CSVs)]
     end
 
     subgraph BigQuery_ELT
